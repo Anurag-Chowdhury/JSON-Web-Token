@@ -1,0 +1,38 @@
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username":"Veer"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVmVlciIsImlhdCI6MTY1MDUzOTEwNn0.6veHJU5WT7o7GKLYI9gd1pcrJCEf7uZR8lAwzfhoHWw"
+}
+
+###
+
+GET http://localhost:3001/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVmVlciIsImlhdCI6MTY1MDUzOTEyNCwiZXhwIjoxNjUwNTM5MTQ0fQ.UqMTqQBycG3x9tCbVQkJkoeMPur0wgDyT1fE1hAg_IE
+
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+  "token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGluYWwiLCJpYXQiOjE2Mzg5NzY5MjR9.YRdz3Mc_m5seVkkMzcq5yTTYnpz4a0jDWdS2sfFnwzA"
+}
+
+###
+
+
+
+
+GET http://localhost:3001/posts
+
